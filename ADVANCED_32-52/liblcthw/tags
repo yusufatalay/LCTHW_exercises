@@ -1,0 +1,85 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CFLAGS	Makefile	/^CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)$/;"	m
+CFLAGS	Makefile	/^dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$(OPTLIBS)$/;"	m
+LDLIBS	Makefile	/^	LDLIBS=-llcthw -lbsd -L.\/build -lm$/;"	m
+LIST_FOREACH	src/lcthw/list.h	38;"	d
+List	src/lcthw/list.h	/^typedef struct List{$/;"	s
+List	src/lcthw/list.h	/^}List;$/;"	t	typeref:struct:List
+ListNode	src/lcthw/list.h	/^typedef struct ListNode{  \/\/ This is a double linked list node$/;"	s
+ListNode	src/lcthw/list.h	/^}ListNode;$/;"	t	typeref:struct:ListNode
+ListNode_swap	src/lcthw/list_algos.c	/^inline void ListNode_swap(ListNode * a, ListNode *b){$/;"	f
+List_bubble_sort	src/lcthw/list_algos.c	/^int List_bubble_sort(List *list, List_compare cmp){$/;"	f
+List_clear	src/lcthw/list.c	/^void List_clear(List * list)$/;"	f
+List_clear_destroy	src/lcthw/list.c	/^void List_clear_destroy(List * list)$/;"	f
+List_compare	src/lcthw/list_algos.h	/^typedef int (*List_compare) (const void *a , const void *b);$/;"	t
+List_count	src/lcthw/list.h	26;"	d
+List_create	src/lcthw/list.c	/^List *List_create()$/;"	f
+List_destroy	src/lcthw/list.c	/^void List_destroy(List * list)$/;"	f
+List_first	src/lcthw/list.h	27;"	d
+List_last	src/lcthw/list.h	28;"	d
+List_merge	src/lcthw/list_algos.c	/^inline List *List_merge(List * left, List * right, List_compare cmp){$/;"	f
+List_merge_sort	src/lcthw/list_algos.c	/^List *List_merge_sort(List * list, List_compare cmp){$/;"	f
+List_pop	src/lcthw/list.c	/^void *List_pop(List * list)$/;"	f
+List_push	src/lcthw/list.c	/^void List_push(List * list, void *value)$/;"	f
+List_remove	src/lcthw/list.c	/^void *List_remove(List * list, ListNode * node)$/;"	f
+List_shift	src/lcthw/list.c	/^void *List_shift(List * list)$/;"	f
+List_unshift	src/lcthw/list.c	/^void List_unshift(List * list , void *value)$/;"	f
+NDEBUG	tests/minunit.h	1;"	d
+NUM_VALUES	tests/list_algos.tests.c	8;"	d	file:
+OBJECTS	Makefile	/^OBJECTS=$(patsubst %.c,%.o,$(SOURCES))$/;"	m
+OS	Makefile	/^OS=$(shell lsb_release -si)$/;"	m
+PREFIX	Makefile	/^PREFIX?=\/usr\/local$/;"	m
+RUN_TESTS	tests/minunit.h	15;"	d
+SOURCES	Makefile	/^SOURCES=$(wildcard src\/**\/*.c src\/*.c)$/;"	m
+TARGET	Makefile	/^TARGET=build\/liblcthw.a$/;"	m
+TESTS	Makefile	/^TESTS=$(patsubst %.c,%,$(TEST_SRC))$/;"	m
+TEST_SRC	Makefile	/^TEST_SRC=$(wildcard tests\/*_tests.c)$/;"	m
+__dbg_h__	src/lcthw/dbg.h	2;"	d
+_minunit_h	tests/minunit.h	3;"	d
+all_tests	tests/list_algos.tests.c	/^RUN_TESTS(all_tests);$/;"	v
+all_tests	tests/list_algos.tests.c	/^char *all_tests()$/;"	f
+all_tests	tests/list_tests.c	/^RUN_TESTS(all_tests);$/;"	v
+all_tests	tests/list_tests.c	/^char *all_tests()$/;"	f
+check	src/lcthw/dbg.h	28;"	d
+check_debug	src/lcthw/dbg.h	36;"	d
+check_mem	src/lcthw/dbg.h	34;"	d
+clean_errno	src/lcthw/dbg.h	15;"	d
+count	src/lcthw/list.h	/^    int count;$/;"	m	struct:List
+create_words	tests/list_algos.tests.c	/^List *create_words()$/;"	f
+debug	src/lcthw/dbg.h	11;"	d
+debug	src/lcthw/dbg.h	9;"	d
+first	src/lcthw/list.h	/^    ListNode *first;$/;"	m	struct:List
+is_sorted	tests/list_algos.tests.c	/^int is_sorted(List * words)$/;"	f
+last	src/lcthw/list.h	/^    ListNode *last;$/;"	m	struct:List
+lcthw_List_algos_h	src/lcthw/list_algos.h	2;"	d
+lcthw_List_h	src/lcthw/list.h	2;"	d
+list	tests/list_tests.c	/^static List *list = NULL;$/;"	v	file:
+log_err	src/lcthw/dbg.h	17;"	d
+log_info	src/lcthw/dbg.h	25;"	d
+log_warn	src/lcthw/dbg.h	21;"	d
+mu_assert	tests/minunit.h	11;"	d
+mu_run_test	tests/minunit.h	12;"	d
+mu_suite_start	tests/minunit.h	9;"	d
+next	src/lcthw/list.h	/^    struct ListNode *next;$/;"	m	struct:ListNode	typeref:struct:ListNode::ListNode
+prev	src/lcthw/list.h	/^    struct ListNode *prev;$/;"	m	struct:ListNode	typeref:struct:ListNode::ListNode
+sentinel	src/lcthw/dbg.h	31;"	d
+test1	tests/list_tests.c	/^char *test1 = "test1 data";$/;"	v
+test2	tests/list_tests.c	/^char *test2 = "test2 data";$/;"	v
+test3	tests/list_tests.c	/^char *test3 = "test3 data";$/;"	v
+test_bubble_sort	tests/list_algos.tests.c	/^char *test_bubble_sort()$/;"	f
+test_create	tests/list_tests.c	/^char *test_create()$/;"	f
+test_destroy	tests/list_tests.c	/^char *test_destroy()$/;"	f
+test_merge_sort	tests/list_algos.tests.c	/^char *test_merge_sort()$/;"	f
+test_push_pop	tests/list_tests.c	/^char *test_push_pop()$/;"	f
+test_remove	tests/list_tests.c	/^char *test_remove()$/;"	f
+test_shift	tests/list_tests.c	/^char *test_shift()$/;"	f
+test_unshift	tests/list_tests.c	/^char *test_unshift()$/;"	f
+tests_run	tests/minunit.h	/^int tests_run;$/;"	v
+value	src/lcthw/list.h	/^    void *value;$/;"	m	struct:ListNode
+values	tests/list_algos.tests.c	/^char *values[] = {"XXXX","1234","abcd","xjvef","NDSS"};$/;"	v
