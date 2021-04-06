@@ -1,4 +1,8 @@
 ----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
+----
 RUNNING: tests/list_tests
 ALL TESTS PASSED
 Tests run: 6
